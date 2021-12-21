@@ -19,7 +19,7 @@ apt install python3-scapy
 ## Cài đặt
 
 ```
-git clone https://github.com/EmreOvunc/Python-SYN-Flood-Attack-Tool.git
+git clone https://github.com/DauDau432/SYN-Flood-Attack-Tool
 cd Python-SYN-Flood-Attack-Tool
 ```
 
