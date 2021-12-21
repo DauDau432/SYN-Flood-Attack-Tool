@@ -45,8 +45,8 @@ def info():
 	print "# Chào mừng bạn đến với SYN Flood Tool #"
 	print "########################################"
 
-	dstIP = raw_input ("\nTarget IP : ")
-	dstPort = input ("Target Port : ")
+	dstIP = raw_input ("\nIP mục tiêu: ")
+	dstPort = input ("Cổng mục tiêu: ")
 	
 	return dstIP,int(dstPort)
 	
