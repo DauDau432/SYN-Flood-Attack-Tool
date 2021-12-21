@@ -4,26 +4,26 @@
 [![](https://img.shields.io/github/stars/EmreOvunc/Python-SYN-Flood-Attack-Tool)](https://github.com/EmreOvunc/Python-SYN-Flood-Attack-Tool/stargazers)
 [![](https://img.shields.io/github/forks/EmreOvunc/Python-SYN-Flood-Attack-Tool)](https://github.com/EmreOvunc/Python-SYN-Flood-Attack-Tool/network/members)
 
-Python SYN Flood Attack Tool
+Công cụ tấn công lũ lụt Python SYN
 
-You can start SYN Flood attack with this tool.
+Bạn có thể bắt đầu cuộc tấn công SYN Flood bằng công cụ này.
 
-Simple and efficient.
+Đơn giản và hiệu quả.
 
-## Dependencies
+## Sự phụ thuộc
 ```
 apt install python-scapy
 apt install python3-scapy
 ```
 
-## Installation
+## Cài đặt
 
 ```
 git clone https://github.com/EmreOvunc/Python-SYN-Flood-Attack-Tool.git
 cd Python-SYN-Flood-Attack-Tool
 ```
 
-## Usage
+## Cách sử dụng
 
 ```
 python3 py3_synflood_cmd.py -t 10.20.30.40 -p 8080 -c 5
@@ -31,19 +31,18 @@ python3 py3_SYN-Flood.py
 python SYN-Flood.py
 ```
 ```
-usage: py3_synflood_cmd.py [-h] [--target TARGET] [--port PORT]
+cách sử dụng: py3_synflood_cmd.py [--help] [--target TARGET] [--port PORT]
                            [--count COUNT] [--version]
-
-optional arguments:
-  -h, --help            show this help message and exit
+đối số tùy chọn:
+  --help, -h hiển thị thông báo trợ giúp này và thoát
   --target TARGET, -t TARGET
-                        target IP address
-  --port PORT, -p PORT  target port number
-  --count COUNT, -c COUNT
-                        number of packets
-  --version, -v         show program's version number and exit
+địa chỉ IP mục tiêu
+  --port PORT, -p PORT số cổng mục tiêu
+  --count COUNT, -c ĐẾM
+số lượng gói tin
+  --version, -v hiển thị số phiên bản của chương trình và thoát
 
-Usage: python3 py3_synflood_cmd.py -t 10.20.30.40 -p 8080 -c 1
+ví dụ: python3 py3_synflood_cmd.py -t 10.20.30.40 -p 8080 -c 1
 ```
 
 ![alt tag](https://emreovunc.com/projects/python_synflood_attack_cmd.png)
