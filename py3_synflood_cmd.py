@@ -39,7 +39,7 @@ def SYN_Flood(dstIP, dstPort, counter):
 		send(IP_Packet/TCP_Packet, verbose=0)
 		total+=1
 
-	stdout.write("\nTotal packets sent: %i\n" % total)
+	stdout.write("\nTổng số gói đã gửi: %i\n" % total)
 
 
 def main():
