@@ -35,7 +35,7 @@ cách sử dụng: py3_synflood_cmd.py [--help] [--target TARGET] [--port PORT]
                            [--count COUNT] [--version]
 đối số tùy chọn:
   --help, -h hiển thị thông báo trợ giúp này và thoát
-  --target TARGET, -t TARGET
+  --target TARGET, -t Mục tiêu
 địa chỉ IP mục tiêu
   --port PORT, -p PORT số cổng mục tiêu
   --count COUNT, -c ĐẾM
