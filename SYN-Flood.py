@@ -1,7 +1,4 @@
 #!/usr/bin/python
-# Emre Ovunc
-# info@emreovunc.com
-# Syn Flood Tool Python
 
 from scapy.all import *
 import os
@@ -45,7 +42,7 @@ def info():
 	print "#############################"
 	print "#    github.com/EmreOvunc   #"
 	print "#############################"
-	print "# Welcome to SYN Flood Tool #"
+	print "# Chào mừng bạn đến với Python3 SYN Flood Tool #"
 	print "#############################"
 
 	dstIP = raw_input ("\nTarget IP : ")
